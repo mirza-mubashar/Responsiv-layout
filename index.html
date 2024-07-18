@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <div>I'm header</div>
+
+        <nav>
+            <div class="nav-title"><a href="#">edgEdu.org</a></div>
+            <div id="show-aside">Menu</div>
+        </nav>
+
+    </header>
+
+    <div class="hero">
+        <aside>
+            <h1>I'm aside</h1>
+        </aside>
+        <main>
+            <h1>I'm main</h1>
+        </main>
+    </div>
+    
+    <footer>I'm footer</footer>
+
+</body>
+
+    <script>
+        document.querySelector('#show-aside').addEventListener( 'click', ()=>{
+            document.querySelector('.hero').classList.toggle('show')
+        } )
+    </script>
+
+</html>
